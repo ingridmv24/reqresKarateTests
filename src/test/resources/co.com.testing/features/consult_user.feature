@@ -1,7 +1,8 @@
 Feature: Consult reqres API
 
-  Background: Set urlBase
+  Background: Set url base and headers
     * url urlBase
+    * configure headers = { 'Content-type': 'application/json', 'Accept': '*/*' }
 
   @GetUserListByPage
   Scenario Outline: Get user list by page successfully
